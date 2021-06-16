@@ -1,0 +1,11 @@
+<!-- <p>viewcats works!</p> -->
+<div class="content">
+    
+    <button mat-raised-button (click)="getCat()" color="primary">Let's get some cats</button>
+    <br>
+    <div class="cat-views">
+        <div class="cat" *ngFor="let item of randomCat">
+            <img class="cat-image" [src]="item.imagesrc" >
+        </div>
+    </div>
+</div>
