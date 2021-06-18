@@ -46,7 +46,9 @@ jobs:
       #with:
        # name: node-app
     - name: current dir
-      run: ls -la
+      run: |
+        touch file
+        ls -la
 
     - name: 'Deploy to Azure Web App'
       id: deploy-to-webapp
