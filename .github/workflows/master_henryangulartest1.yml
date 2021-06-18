@@ -47,6 +47,7 @@ jobs:
        # name: node-app
     - name: current dir
       run: |
+        cd ..
         touch file
         ls -la
 
