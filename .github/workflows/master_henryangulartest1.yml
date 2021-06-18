@@ -53,4 +53,4 @@ jobs:
         app-name: 'henryangulartest1'
         #slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_fbe1e53d2e5e4f358cd395460d53ebd6 }}
-        package: ./dist/visual-antidote-henry
+        package: .
