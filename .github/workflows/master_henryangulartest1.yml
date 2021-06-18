@@ -25,6 +25,7 @@ jobs:
       run: |
         npm install
         npm run build --prod
+        cp -RT ./dist /home/site/wwwroot/dist
       working-directory: .
 
 #    - name: Upload artifact for deployment job
