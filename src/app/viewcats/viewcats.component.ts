@@ -17,6 +17,8 @@ export class ViewcatsComponent implements OnInit {
     // get all cat from api
     this.http.get<any>(this.catAPI).subscribe((data) => {
       let i = 0;
+      // reset cats list every time the button clicks
+      this.randomCat = [];
       // create random unique index base on data length
       while (i < 12) {
         let rand = Math.floor(Math.random() * 500);
