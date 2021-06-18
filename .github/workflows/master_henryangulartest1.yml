@@ -47,10 +47,11 @@ jobs:
        # name: node-app
     - name: current dir
       run: |
+        pwd
         cd ..
-        touch file
         ls -la
-
+        touch file
+        
     - name: 'Deploy to Azure Web App'
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
